@@ -27,4 +27,15 @@ request ({url, json : true  } , (error , response) => {
 })
 
 
-
+const geocodeUrl ='https://api.mapbox.com/geocoding/v5/mapbox.places/egypt.json?access_token=pk.eyJ1IjoiaXNsYW0yODQiLCJhIjoiY2wwamEzNmFhMGFtNTNkb3pqaXk4bXNnYSJ9.qYlrWIqo41gXgNNc4h8yIw'
+//run
+request ({url : geocodeUrl , json : true} , (error , response) => {
+     
+        if (error){
+            callback ("unable to connect geocode service" , undefined)
+       
+        } else {
+            console.log(response.body)    
+             
+        }
+      })
