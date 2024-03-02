@@ -26,9 +26,5 @@ request ({url, json : true  } , (error , response) => {
     }
 })
 
- 
-const country = process.argv[2]
 
 
-geocode( country , (error , data) => {
-   
